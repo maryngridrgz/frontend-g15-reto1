@@ -1,0 +1,23 @@
+:root {   
+   --primary-theme-color: #34656D;
+   --secondary-theme-color: #C6FFC1;
+   --terciary-theme-color: #fffbdf;
+   --text-color: #334443;
+   --shadow-color: #8888;
+   --button-color: #f6ffa4;
+   --button-color-active: #a10b0b;
+   --button-text-color: #22577E;
+   --primary-highlight: #C74B50;
+   --secondary-highlight: #D49B54;
+   --padding-section: 2em 0;
+   --padding-container: 0 2em;
+   --border-radius: 0.5rem;
+   --all-transitions: all 0.25s;
+}
+
+.body {
+    background-color: var(--secondary-theme-color);
+    color: var(--text-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
