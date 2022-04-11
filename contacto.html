@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Animal - Contacto</title>
+    <link rel="icon" type="image/x-icon" href="./img/mundoAnimal-logo.ico" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#">
+                    <img src="./img/mundoAnimal.jpg" alt="Logo Veterinaria Mundo Animal">
+                </a>                
+                <hgroup>
+                    <h4>Clínica Veterinaria</h4>
+                    <h4>Mundo Animal</h4>
+                </hgroup>
+                <ul>
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./vacunacion.html">Vacunación</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>            
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Contacto</h1>
+            <form>
+                <label for="nombreApellidos">Nombre y apellidos</label>
+                <input type="text" id="nombreApellidos" placeholder="Ingresa tu nombre" required><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ingresa tu email" required><br>
+                <label for="celular">Celular</label>
+                <input type="number" id="celular" placeholder="Ingresa tu celular" required><br>
+                <label for="comentario">Comentarios</label><br>
+                <input type="text" id="comentario" placeholder="Ingresa tus comentarios" required><br>
+                <div>
+                    <p>Tipo de Mascota</p>
+                    <label for="perro">
+                        <input id="perro" type="checkbox" name="tipoMascota" value="perro">Perro
+                    </label>
+                    <label for="gato">
+                        <input id="gato" type="checkbox" name="tipoMascota" value="gato">Gato
+                    </label>
+                    <label for="otro">
+                        <input id="otro" type="checkbox" name="tipoMascota" value="otro">Otro
+                    </label>
+                    <label for="otraMascota"></label>
+                    <input type="text" id="otraMascota" placeholder="Especificar">
+                </div>
+                <button>Limpiar</button>
+                <input type="submit" value="Enviar"><br>
+            </form>
+            <img src="./img/mundoAnimalContacto.png" alt="Contactar Mundo Animal">
+        </div>
+    </main>
+</body>
+</html>
