@@ -18,30 +18,37 @@
     <meta property="og:image" content="https://i.postimg.cc/ZqXJCS7s/logo-mundo-animal-contacto.jpg">
     <meta property="og:url" content="https://maryngridrgz.github.io/frontend-g15-reto1/contacto.html">
     <title>Mundo Animal - Contacto</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div>
-                <a href="#">
-                    <img src="./img/logo-mundo-animal.jpg" alt="Logo de Veterinaria Mundo Animal">
-                </a>                
-                <hgroup>
-                    <h4>Clínica Veterinaria</h4>
-                    <h4>Mundo Animal</h4>
-                </hgroup>
-                <ul>
-                    <li>
-                        <a href="./index.html">Inicio</a>
+<body class="body">
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-nav__container">
+                <div class="header-nav__logo-container">
+                    <a href="#" class="header-nav__link-logo-container">
+                        <img src="./img/logo-mundo-animal.jpg" alt="Logo de Veterinaria Mundo Animal"
+                        class="header-nav__link-logo">
+                    </a>
+                    <h4 class="header-nav__title-logo">Mundo Animal</h4>
+                </div>
+                <label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
+                    <img class="header-nav__menu-icon" src="./img/perro-con-hueso.jpg" alt="perro con hueso"/>
+                </label>
+
+                <input type="checkbox" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox"/>
+                
+                <ul class="header-nav__menu-link-list">
+                    <li class="header-nav__menu-link-item">
+                        <a href="./index.html" class="header-nav__menu-link">Inicio</a>
                     </li>
-                    <li>
-                        <a href="./vacunacion.html">Vacunación</a>
+                    <li class="header-nav__menu-link-item">
+                        <a href="./vacunacion.html" class="header-nav__menu-link">Vacunación</a>
                     </li>
-                    <li>
-                        <a href="./blog.html">Blog</a>
+                    <li class="header-nav__menu-link-item">
+                        <a href="./blog.html" class="header-nav__menu-link">Blog</a>
                     </li>
-                    <li>
-                        <a href="./contacto.html">Contacto</a>
+                    <li class="header-nav__menu-link-item">
+                        <a href="./contacto.html" class="header-nav__menu-link header-nav__menu-link--active">Contacto</a>
                     </li>
                 </ul>
             </div>            

@@ -19,21 +19,25 @@
     <meta property="og:image" content="https://i.postimg.cc/hGp0kNR2/portada-con-varios-animales-mirando-ciudad-logo.jpg">
     <meta property="og:url" content="https://maryngridrgz.github.io/frontend-g15-reto1/index.html">
     <title>Mundo Animal - Cuidamos a tu mascota como si fuera nuestra</title>
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body class="body">
     <header class="header">
         <nav class="header-nav">
             <div class="header-nav__container">
-                <a href="#" class="header-nav__link-logo-container">
-                    <figure class="header-nav__logo-container">
-                        <img src="./img/logo-mundo-animal.jpg" alt="Logo de Veterinaria Mundo Animal" class="header-nav__logo">
-                    </figure>
-                </a>
-                <hgroup class="header-nav__title-container">
-                    <h4 class="header-nav__title" >Clínica Veterinaria</h4>
-                    <h4 class="header-nav__title">Mundo Animal</h4>
-                </hgroup>
+                <div class="header-nav__logo-container">
+                    <a href="#" class="header-nav__link-logo-container">
+                        <img src="./img/logo-mundo-animal.jpg" alt="Logo de Veterinaria Mundo Animal"
+                        class="header-nav__link-logo">
+                    </a>
+                    <h4 class="header-nav__title-logo">Mundo Animal</h4>
+                </div>
+                <label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
+                    <img class="header-nav__menu-icon" src="./img/perro-con-hueso.jpg" alt="perro con hueso"/>
+                </label>
+
+                <input type="checkbox" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox"/>
+                
                 <ul class="header-nav__menu-link-list">
                     <li class="header-nav__menu-link-item">
                         <a href="./index.html" class="header-nav__menu-link">Inicio</a>
@@ -45,50 +49,49 @@
                         <a href="./blog.html" class="header-nav__menu-link">Blog</a>
                     </li>
                     <li class="header-nav__menu-link-item">
-                        <a href="./contacto.html" class="header-nav__menu-link">Contacto</a>
+                        <a href="./contacto.html" class="header-nav__menu-link header-nav__menu-link--active">Contacto</a>
                     </li>
                 </ul>
             </div>            
         </nav>
     </header>
-    <main>
-        <div>
-            <figure>
-                <img src="https://i.postimg.cc/7ZsytRdN/portada-con-varios-animales-mirando-ciudad.jpg" 
-                alt="Portada con varios animales mirando a la ciudad"/>
-            </figure>
-            <hgroup>
-                <h1>Bienvenidos a Clínica Veterinaria Mundo Animal</h1>
-                <h2>Cuidamos a tu mascota es como si fuera nuestra</h2>
+    <main class="main">
+        <div class="main-title">
+            <img src="https://i.postimg.cc/7ZsytRdN/portada-con-varios-animales-mirando-ciudad.jpg" 
+            alt="Portada con varios animales mirando a la ciudad"
+            class="main-title__img"/>
+            <hgroup class="main-title__title-container">
+                <h1 class="main-title__title-welcome">Bienvenidos a Clínica Veterinaria Mundo Animal</h1>
+                <h2 class="main-title__title-slogan">Cuidamos a tu mascota es como si fuera nuestra</h2>
             </hgroup>
         </div>
-        <section>
-            <h2>Nosotros</h2>
-            <p>Somos una clínica veterinaria confiable y amante de las mascotas contamos con más de 15 años de 
+        <section class="section-Nosotros">
+            <h2 class="section-Nosotros__title">Nosotros</h2>
+            <p class="section-Nosotros__text">Somos una clínica veterinaria confiable y amante de las mascotas contamos con más de 15 años de 
             experiencia. Nuestro staff de médicos están altamente calificados y siempre a la vanguardia de 
             los últimos protocolos de diagnóstico y tratamiento.</p>
             <p>Nuestra vocación es el servicio y el bienestar de tus pequeños miembros de tu familia.</p>
-            <figure>
-                <img src="./img/clinica-veterinaria-animado.jpg" alt="Clinica veterinaria animado">
-            </figure>
+            <img src="./img/clinica-veterinaria-animado.jpg" alt="Clinica veterinaria animado" 
+            class="section-Nosotros__img"/>
         </section>
-        <section>
-            <h2>Especialidades</h2>
-            <ul>
-                <li>Oncología</li>
-                <li>Fisioterapia</li>
-                <li>Traumatología</li>
-                <li>Neurología</li>
-                <li>Odontología</li>
-                <li>Oftalmología</li>
-                <li>Felinos</li>
-                <li>Cardiología</li>
-                <li>Nutrición</li>
-                <li>Etología</li>
+        <section class="section-Especialidades">
+            <h2 class="section-Especialidades__title">Especialidades</h2>
+            <ul class="section-Especialidades__list">
+                <li class="section-Especialidades__list-item">Oncología</li>
+                <li class="section-Especialidades__list-item">Fisioterapia</li>
+                <li class="section-Especialidades__list-item">Traumatología</li>
+                <li class="section-Especialidades__list-item">Neurología</li>
+                <li class="section-Especialidades__list-item">Odontología</li>
+                <li class="section-Especialidades__list-item">Oftalmología</li>
+                <li class="section-Especialidades__list-item">Felinos</li>
+                <li class="section-Especialidades__list-item">Cardiología</li>
+                <li class="section-Especialidades__list-item">Nutrición</li>
+                <li class="section-Especialidades__list-item">Etología</li>
             </ul>
         </section>        
     </main>
     <aside>
+        <h2>Enlaces de interés</h2>
         <a href="https://www.purina-latam.com/mx/purina/nota/perros/guia-de-alimentacion-para-tu-perro" 
          target="_blank">Alimentación de caninos</a>
     </aside>
